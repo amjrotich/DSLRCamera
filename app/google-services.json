@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "508880606697",
+    "project_id": "dslr-hd-camera-1cabf",
+    "storage_bucket": "dslr-hd-camera-1cabf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508880606697:android:c7584aebd0175c43e7e778",
+        "android_client_info": {
+          "package_name": "com.cradleshyft.dslrcamera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARgKnTDeKE8V-iCs9p5j3Q2N3uxWDilwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

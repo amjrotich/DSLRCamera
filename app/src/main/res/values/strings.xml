@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DSLR Camera</string>
+    <string name="txt_info_img_max_quality">Enabled: images may take longer to capture.\nDisabled: images may capture faster but the image quality may be reduced.</string>
+    <string name="storage">Storage</string>
+    <string name="image_size">Image size</string>
+    <string name="image_max_quality">Image max quality</string>
+    <string name="video_resolution">Video resolution</string>
+    <string name="frame_rate">Frame rate</string>
+    <string name="sound">Sound</string>
+    <string name="grid_lines">Grid lines</string>
+</resources>

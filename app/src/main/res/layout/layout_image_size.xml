@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="56dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="43dp"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupImageSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/imgSizeFull"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Full"
+                android:textColor="@android:color/white"
+                app:chipBackgroundColor="@drawable/selector_radio_button"
+                app:chipCornerRadius="@dimen/chip_radius"
+                app:chipStrokeColor="@color/colorOrange"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/imgSize169_4032"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="16:9 (9.1MP) 4032x2268"
+                android:textColor="@android:color/white"
+                app:chipBackgroundColor="@drawable/selector_radio_button"
+                app:chipCornerRadius="@dimen/chip_radius"
+                app:chipStrokeColor="@color/colorOrange"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/imgSize169_2560"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="16:9 (3.7MP) 2560x1440"
+                android:textColor="@android:color/white"
+                app:chipBackgroundColor="@drawable/selector_radio_button"
+                app:chipCornerRadius="@dimen/chip_radius"
+                app:chipStrokeColor="@color/colorOrange"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/imgSize43_4032"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="4:3 (12MP) 4032x3024"
+                android:textColor="@android:color/white"
+                app:chipBackgroundColor="@drawable/selector_radio_button"
+                app:chipCornerRadius="@dimen/chip_radius"
+                app:chipStrokeColor="@color/colorOrange"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/imgSize43_2880"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="4:3 (6.2MP) 2880x2160"
+                android:textColor="@android:color/white"
+                app:chipBackgroundColor="@drawable/selector_radio_button"
+                app:chipCornerRadius="@dimen/chip_radius"
+                app:chipStrokeColor="@color/colorOrange"
+                app:chipStrokeWidth="1dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

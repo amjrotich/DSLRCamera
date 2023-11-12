@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imgFocus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:minWidth="56dp"
+        android:minHeight="56dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/shape_focus" />
+
+    <com.cradleshyft.dslrcamera.view.custom.CameraGridLinesView
+        android:id="@+id/gridLinesView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <include
+        android:id="@+id/views"
+        layout="@layout/layout_buttons_camera" />
+
+</RelativeLayout>

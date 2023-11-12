@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottom"
+    android:layout_width="match_parent"
+    android:layout_height="126dp"
+    android:layout_above="@+id/chronometerVideo"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imgLastAction"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerCrop"
+        app:roundPercent="1" />
+
+    <RelativeLayout
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp">
+
+        <ImageButton
+            android:id="@+id/btnTakeAction"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:src="@drawable/shape_take_photo" />
+
+        <ImageView
+            android:id="@+id/imgCenterTakeAction"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/shape_take_video" />
+
+        <ImageView
+            android:id="@+id/imgVideoRec"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/shape_record" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnSwitchCamera"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_circular_transparent"
+        android:src="@drawable/ic_switch_camera" />
+
+</LinearLayout>

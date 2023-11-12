@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rvActionsParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.cradleshyft.dslrcamera.util.selector.RecyclerViewSelector
+            android:id="@+id/rvActions"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_selector" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/layoutButtonsTop"
+        layout="@layout/layout_camera_buttons_top" />
+
+    <include
+        android:id="@+id/layoutCameraSettings"
+        layout="@layout/layout_camera_settings" />
+
+    <include
+        android:id="@+id/layoutBarcode"
+        layout="@layout/layout_barcode" />
+
+    <include
+        android:id="@+id/layoutTextRecognition"
+        layout="@layout/layout_text_recognition" />
+
+    <include
+        android:id="@+id/layoutTranslateText"
+        layout="@layout/layout_translate_text" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutButtonsCamera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtResultLabeling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutButtonsCamera"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/shape_bg_layout_transparent"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:padding="6dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtCountDownTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="6"
+        android:textColor="@android:color/white"
+        android:textSize="156sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Chronometer
+        android:id="@+id/chronometerVideo"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/layoutButtonsCamera"
+        layout="@layout/layout_camera_buttons_bottom" />
+
+</RelativeLayout>
